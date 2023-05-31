@@ -302,7 +302,7 @@
 							<p class="about__wrapper__container--2__employee__employee-info__description">
 								Hilde ble uteksaminert ved det odontologiske fakultet i Oslo i 1997.
 								Hun har jobbet 4 år i den offentlige tannhelsetjenesten og de siste
-								15 årene i privat praksis.
+								<startDate id="hilde"></startDate> årene i privat praksis.
 							</p>
 						</div>
 					</div>
@@ -320,41 +320,7 @@
 							</h4>
 							<p class="about__wrapper__container--2__employee__employee-info__description">
 								Tom ble uteksaminert ved det odontologiske fakultet i Oslo i 1997.
-								Han har jobbet et år i militæret og deretter de siste 18 årene i privat praksis.
-							</p>
-						</div>
-					</div>
-					<div class="about__wrapper__container--2__employee__hr fb--column fb--middle">
-						<hr>
-					</div>
-					<div class="about__wrapper__container--2__employee fb fb--row fb--middle">
-						<img class="box-shadow" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./multimedia/employee3.jpg" alt="Kariann Lima Helmsgård">
-						<div class="about__wrapper__container--2__employee__employee-info fb fb--column">
-							<p class="about__wrapper__container--2__employee__employee-info__position">
-								Tannhelsesekretær
-							</p>
-							<h4>
-								Kariann Lima Helmsgård
-							</h4>
-							<p class="about__wrapper__container--2__employee__employee-info__description">
-								Autorisasjon 2001
-							</p>
-						</div>
-					</div>
-					<div class="about__wrapper__container--2__employee__hr fb--column fb--middle">
-						<hr>
-					</div>
-					<div class="about__wrapper__container--2__employee fb fb--row fb--middle">
-						<img class="box-shadow" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./multimedia/employee5.jpg" alt="Kristin Oddsen">
-						<div class="about__wrapper__container--2__employee__employee-info fb fb--column">
-							<p class="about__wrapper__container--2__employee__employee-info__position">
-								Tannhelsesekretær
-							</p>
-							<h4>
-								Kristin Oddsen
-							</h4>
-							<p class="about__wrapper__container--2__employee__employee-info__description">
-								Autorisasjon 2015
+								Han har jobbet et år i militæret og deretter de siste <startDate id="tom"></startDate> årene i privat praksis.
 							</p>
 						</div>
 					</div>
@@ -530,7 +496,8 @@
 	</body>
 
   <script>    
+			document.getElementById("hilde").innerHTML = new Date().getFullYear() - 2001;
+			document.getElementById("tom").innerHTML = new Date().getFullYear() - 1998;
     document.getElementById("year").innerHTML = new Date().getFullYear();  
   </script>  
-
 </html>
